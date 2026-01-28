@@ -1,4 +1,4 @@
-# Clover POS Bulk Price
+# Clover POS Bulk Price Changer for Categories
 **by raccoon-exe (catari)**
 
 I made this Chrome extension because I was tired of manually updating item prices one by one in the Clover Dashboard. If you have a category with 50 items, clicking through each one takes forever. This tool lets you update the price for every visible item in a category at once.
