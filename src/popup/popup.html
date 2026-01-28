@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Clover POS Bulk Price</title>
+  <style>
+    body {
+      width: 280px;
+      padding: 15px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      text-align: center;
+    }
+
+    .header {
+      margin-bottom: 15px;
+      border-bottom: 2px solid #27ae60;
+      padding-bottom: 10px;
+    }
+
+    .logo {
+      width: 60px;
+      height: auto;
+      margin-bottom: 5px;
+    }
+
+    h3 {
+      margin: 5px 0 0 0;
+      color: #2c3e50;
+      font-size: 16px;
+    }
+
+    .subtitle {
+      font-size: 11px;
+      color: #7f8c8d;
+      margin-bottom: 5px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #219150;
+    }
+
+    p {
+      font-size: 12px;
+      color: #666;
+    }
+
+    .status {
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .footer-link {
+      margin-top: 15px;
+      font-size: 11px;
+    }
+
+    .footer-link a {
+      color: #27ae60;
+      text-decoration: none;
+    }
+
+    .footer-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <img src="/assets/logo.png" class="logo" alt="Logo">
+    <h3>Clover POS Bulk Price</h3>
+    <div class="subtitle">by raccoon-exe (catari)</div>
+  </div>
+
+  <p>Navigate to a Category page with items listed, then click below to show the bulk editor.</p>
+  <button id="showTool" class="btn">Show Bulk Editor Overlay</button>
+  <div id="status" class="status"></div>
+
+  <div class="footer-link">
+    <a href="https://github.com/raccoon-exe" target="_blank">github.com/raccoon-exe</a>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+/* Modernized CSS for the injected overlay with Glassmorphism */
+#clover-bulk-editor-overlay {
+  position: fixed;
+  /* Default Position: Bottom Right */
+  top: auto;
+  bottom: 20px;
+  right: 20px;
+  width: 320px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  z-index: 2147483647;
+  /* Max z-index to stay on top */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: block;
+  animation: cbe-fadeIn 0.3s ease-out;
+  overflow: hidden;
+}
+
+@keyframes cbe-fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#clover-bulk-editor-header {
+  background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+  color: white;
+  padding: 16px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.5px;
+}
+
+#clover-bulk-editor-close {
+  cursor: pointer;
+  font-size: 20px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+#clover-bulk-editor-close:hover {
+  opacity: 1;
+}
+
+#clover-bulk-editor-body {
+  padding: 20px;
+}
+
+.cbe-input-group {
+  margin-bottom: 20px;
+}
+
+.cbe-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cbe-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #eef2f7;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: all 0.2s;
+  background: #f9fafb;
+}
+
+.cbe-input:focus {
+  border-color: #2ecc71;
+  background: white;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.1);
+}
+
+.cbe-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: transform 0.1s, box-shadow 0.2s;
+  box-shadow: 0 4px 6px rgba(39, 174, 96, 0.2);
+  margin-bottom: 12px;
+}
+
+.cbe-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(39, 174, 96, 0.3);
+}
+
+.cbe-btn:active {
+  transform: translateY(1px);
+}
+
+.cbe-btn-secondary {
+  background: white;
+  color: #333;
+  border: 1px solid #ddd;
+  box-shadow: none;
+}
+
+.cbe-btn-secondary:hover {
+  background: #f4f6f8;
+  border-color: #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.cbe-status {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #444;
+  padding: 10px;
+  background: #f0fdf4;
+  border-left: 4px solid #2ecc71;
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+/* Helper class for highlighting */
+.cbe-highlight {
+  box-shadow: 0 0 0 2px #e74c3c !important;
+  transition: box-shadow 0.3s;
+}
